@@ -84,7 +84,7 @@ app.listen(3333)
 - no console: npm run build (este arquivo gera o arquivo server.JS, na pasta build)
 
 -----
-### Configuração do ambiente frontend
+### Configuração do ambiente frontend - React JS
 Sair da pasta server e na raiz do projeto dar o seguinte comando:
 
 ```js
@@ -99,6 +99,13 @@ Entra na pasta web e abre no vscode com "code ."(sem as aspas, claro)
 ```js
 npm install
 ```
+
+### Configuração do ambiente mobile - React Native
+
+```js
+npm install --global expo-cli
+```
+
 
 
 
