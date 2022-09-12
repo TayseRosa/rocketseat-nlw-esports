@@ -1,21 +1,35 @@
 
 # Projeto NLW Esports - NodeJS
 
+### Demo➡️
 ![Logo](readme.png)
 
+#Índice
+- [Demo](#️##demo)
+- [ About the project](##about-the-project)
+- [🚀 Technologies used in this project](#-tecnologias-utilizadas-neste-projeto)
+- [📥 How About](#-como-usar)
+- [🚀 Author](#-autor)
 
+
+## About the project
 Este é um projeto desenvolvido no evento NLW da Rocketseat (NLW Esports), onde neste evento foi adquirido os seguintes conhecimentos:
 
-- TypesScript
 - Node JS
 - Express
 - Vite js
+
+- React Native
+- TypesScript
+
+- React Native
+- Expo
+
 
 - Dentre muitos outros conhecimentos...
 
 
 ---
-
 
 ## Passo a passo do desenvolvimento do projeto
 
