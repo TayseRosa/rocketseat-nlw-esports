@@ -106,7 +106,14 @@ npm install
 npm install --global expo-cli
 ```
 
+```js
+expo init mobile
+```
+- blank(typescript)
 
+Depois de criado o projeto, acessar a pasta mobile e abrir no VSCODE
+Abrir o emulador antes de abrir o projeto e:
+- expo start
 
 
 ----
