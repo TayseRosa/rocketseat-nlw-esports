@@ -1,23 +1,26 @@
 
-# Projeto NLW Esports - React JS | React Native | Node JS
+<h1 align="center"> Project NLW Esports - React JS | React Native | Node JS </h1>
 
-### Demo Web
-![Logo](readme.png)
-
-### Demo Mobile
+# Demo Mobile
 <img src="readmeMobile.gif" style="height: 500px">
 
 
+# Demo Web
+![Logo](readme.png)
+
+---
+
 #Índice
-- [Demo](#️##demo)
-- [ About the project](##about-the-project)
-- [🚀 Technologies used in this project](#-tecnologias-utilizadas-neste-projeto)
-- [📥 How About](#-como-usar)
-- [🚀 Author](#-autor)
+- About the project
+- Step by step to config NodeJs
+- Step by step to config ReactJs
+- Step by step to config React Native
+- About the developer
 
+---
 
-## About the project
-Este é um projeto desenvolvido no evento NLW da Rocketseat (NLW Esports), onde neste evento foi adquirido os seguintes conhecimentos:
+# About the project
+This is a project developed at the Rocketseat NLW event (NLW Esports), where the following knowledge was acquired in this event:
 
 BACKEND
 - Node JS
@@ -32,26 +35,22 @@ FRONTEND
 MOBILE
 - React Native
 - Expo
-
-
-- Dentre muitos outros conhecimentos...
+- Among many other knowledge...
 
 ![Logo](readme2.png)
 
 ---
 
-## Passo a passo do desenvolvimento do projeto
+## NodeJS environment configuration
 
-### 1 - Configuração do ambiente NodeJS
-
-Criar uma pasta para seu projeto com nome de nlw/server.
+Create a folder for your project named nlw/server.
 
 - npm init -y
 - npm install express -D
 - npm install @types/express -D
 - criar a pasta src/server.ts e adicionar o seguinte código
 
-- No server.ts fica assim:
+- On the server.ts it looks like this:
 ```js
 import express,{Request, Response} from 'express'
 
@@ -68,7 +67,7 @@ app.get('/ads', (request:Request, response:Response)=>{
 app.listen(3333)
 ```
 
--no package.json fica assim:
+-on the package.json it looks like this:
 ```js
 {
   "name": "server",
@@ -94,7 +93,7 @@ app.listen(3333)
 
 
 ```
-- no tsconfig.json alterar para o seguinte: 
+- in tsconfig.json change to the following:
 "module": "CommonJS",       
 "rootDir": "./src",
 "outDir": "./build",
@@ -102,28 +101,28 @@ app.listen(3333)
 
 - npm i ts-node-dev -D
 
-- no console: npx tsc --init
-- no navegador: http://localhost:3333/ads
-- no console: npm run build (este arquivo gera o arquivo server.JS, na pasta build)
+- in console: npx tsc --init
+- in navegador: http://localhost:3333/ads
+- in console: npm run build (este arquivo gera o arquivo server.JS, na pasta build)
 
 -----
-### Configuração do ambiente frontend - React JS
-Sair da pasta server e na raiz do projeto dar o seguinte comando:
+### ReactJS environment configuration
+Exit the server folder and in the project root give the following command:
 
 ```js
 npm create vite@latest
 ```
-- Nome do projto web
+- Name project: web
 - Template: React
 - Variant: Typescript
 
-Entra na pasta web e abre no vscode com "code ."(sem as aspas, claro)
+Enter the web folder and open vscode with "code ." (without the quotes, of course)
 
 ```js
 npm install
 ```
 
-### Configuração do ambiente mobile - React Native
+### React Native environment configuration
 
 ```js
 npm install --global expo-cli
@@ -134,15 +133,15 @@ expo init mobile
 ```
 - blank(typescript)
 
-Depois de criado o projeto, acessar a pasta mobile e abrir no VSCODE
-Abrir o emulador antes de abrir o projeto e:
+After creating the project, access the mobile folder and open it in VSCODE
+Open the emulator before opening the project and:
 - expo start
 
 
 ----
 
 
-## 🚀 Sobre mim
+## 🚀 About the developer
 I'm a Javascript Developer, know me in:
 - www.tayserosa.dev
 - www.github.com/tayserosa
