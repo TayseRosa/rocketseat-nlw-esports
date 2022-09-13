@@ -1,8 +1,12 @@
 
-# Projeto NLW Esports - NodeJS
+# Projeto NLW Esports - React JS | React Native | Node JS
 
-### Demo➡️
+### Demo Web
 ![Logo](readme.png)
+
+### Demo Mobile
+<img src="readmeMobile.gif" style="height: 150px">
+
 
 #Índice
 - [Demo](#️##demo)
@@ -32,6 +36,7 @@ MOBILE
 
 - Dentre muitos outros conhecimentos...
 
+![Logo](readme2.png)
 
 ---
 
