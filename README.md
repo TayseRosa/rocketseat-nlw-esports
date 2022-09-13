@@ -5,7 +5,7 @@
 ![Logo](readme.png)
 
 ### Demo Mobile
-<img src="readmeMobile.gif" style="height: 150px">
+<img src="readmeMobile.gif" style="height: 500px">
 
 
 #Índice
