@@ -15,13 +15,17 @@
 ## About the project
 Este é um projeto desenvolvido no evento NLW da Rocketseat (NLW Esports), onde neste evento foi adquirido os seguintes conhecimentos:
 
+BACKEND
 - Node JS
 - Express
 - Vite js
 
+FRONTEND
 - React Native
 - TypesScript
+- Tailwind CSS
 
+MOBILE
 - React Native
 - Expo
 
