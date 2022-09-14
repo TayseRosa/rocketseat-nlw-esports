@@ -2,7 +2,7 @@
 <h1 align="center"> Project NLW Esports - React JS | React Native | Node JS </h1>
 
 # Demo Mobile
-<img src="readmeMobile.gif" style="height: 500px">
+<img src="readmeMobile.gif" style="height: 500px;">
 
 
 # Demo Web
@@ -68,6 +68,7 @@ app.listen(3333)
 ```
 
 -on the package.json it looks like this:
+
 ```js
 {
   "name": "server",
@@ -104,6 +105,25 @@ app.listen(3333)
 - in console: npx tsc --init
 - in navegador: http://localhost:3333/ads
 - in console: npm run build (este arquivo gera o arquivo server.JS, na pasta build)
+
+<h3>Instalar o Prisma ORM:</h3>
+
+```js
+npm i prisma
+```
+
+```js
+npx prisma init --datasource-provider SQLite
+```
+
+```js
+npx prisma migrate dev
+Name for the new migration: 
+```
+
+```js
+npx prisma studio
+```
 
 -----
 ### ReactJS environment configuration

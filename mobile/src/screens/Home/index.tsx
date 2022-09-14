@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, View, FlatList } from 'react-native';
+import { Image, View, FlatList, Text } from 'react-native';
 
 import logoImg from '../../assets/logo-nlw-esports.png'
 import { GameCard } from '../../components/GameCard';
@@ -15,6 +15,8 @@ export function Home() {
         source={logoImg}
         style={styles.logo}
       />
+
+      <Text style={{color:'#fff'}}>Hello React Native</Text>
 
       <Heading 
         title='Encontre seu duo'
