@@ -125,6 +125,25 @@ Name for the new migration:
 npx prisma studio
 ```
 
+```js
+npm i @prisma/client
+```
+
+```js
+npx prisma generate
+```
+
+Como Resolver Conflito do TS Node Dev com o Prisma (não atualiza o servidor automaticamente):
+No arquivo package.json:
+```js
+"dev": "ts-node-dev --exit-child src/server.ts"
+```
+
+Para o express entender informações em json, incluir no server.ts:
+```js
+app.use(express.json())
+```
+
 -----
 ### ReactJS environment configuration
 Exit the server folder and in the project root give the following command:

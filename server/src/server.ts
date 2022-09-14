@@ -1,34 +1,79 @@
 import express,{Request, Response} from 'express'
+import { PrismaClient } from '@prisma/client'
 
 const app = express()
+app.use(express.json())
 
-app.get('/games', (request:Request, response: Response) => {
-    return response.json([])
+const prisma = new PrismaClient({
+    log:['query']
 })
 
-app.post('/ads', (request:Request, response:Response) => {
-    return response.status(201).json([])
+app.get('/games',async (request:Request, response: Response) => {
+    const games = await prisma.game.findMany({
+        //quantidade de anuncios
+        include:{
+            _count:{
+                select:{
+                    ads: true
+                }
+            }
+        }
+    })
+
+    return response.json(games)
 })
 
-app.get('/games/:id/ads', (request:Request, response:Response)=>{
+app.post('/games/:id/ads', (request:Request, response:Response) => {
+    const gameId = request.params.id
+    const body = request.body
+
+    return response.status(201).json(gameId)
+})
+
+app.get('/games/:id/ads', async (request:Request, response:Response)=>{
     const gameId = request.params.id;
 
-    return response.send(gameId)
+    const ads = await prisma.ad.findMany({
+        select:{
+            id: true,
+            name: true,
+            weekdays:true,
+            useVoiceChannel:true,
+            yearsPlaying: true,
+            hoursStart: true,
+            hoursEnd: true
+        },
+        where:{
+            gameId
+        },
+        orderBy:{
+            createdAt: 'desc'
+        }
+    })
 
-    // return response.json([
-    //     {id:1, name: 'anuncio1'},
-    //     {id:2, name: 'anuncio2'},
-    //     {id:3, name: 'anuncio3'},
-    //     {id:4, name: 'anuncio4'},
-    // ])
+    return response.json(ads.map(ad => {
+        return{
+            ...ad,
+            weekdays: ad.weekdays.split(',')
+        }
+    }))
 })
 
-app.get('/ads/:id/discord', (request:Request, response:Response)=>{
+app.get('/ads/:id/discord', async(request: Request, response: Response) => {
     const adId = request.params.id;
 
-    return response.send(adId)
+    const ad = await prisma.ad.findUniqueOrThrow({
+        select:{
+            discord: true,
+        },
+        where:{
+            id: adId,
+        }
+    })
 
-    return response.json([])
+    return response.json({
+        discord: ad.discord
+    })
 })
 
 app.listen(3333)
